@@ -1,7 +1,8 @@
 ---
-description: SaneSnippet
+description: SaneSnippetD
 tabTrigger:  ssnip
 scope:       source.sanesnippet
+uuid:        2d2fa3ffef8a42b19f1734028ca4a1bb
 ---
 ---
 description: ${1:Lorizzle}

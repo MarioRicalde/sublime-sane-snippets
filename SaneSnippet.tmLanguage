@@ -47,7 +47,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>^(description|tabTrigger|scope)\s*(:)\s*(.*?)\s*$</string>
+					<string>^(description|tabTrigger|scope|uuid|name)\s*(:)\s*(.*?)\s*$</string>
 				</dict>
 				<dict>
 					<key>begin</key>
