@@ -1,11 +1,13 @@
 import sublime, sublime_plugin, os
+import uuid
 
 snippet_template = """---
 description: ${1:Lorizzle}
 tabTrigger:  ${2:lorizzle}
 scope:       ${3:text.plain}
+uuid:        %s
 ---
-$0"""
+$0""" % uuid.uuid1()
 
 syntax_file = os.path.join(os.getcwd(), 'SaneSnippet.tmLanguage')
 
@@ -27,7 +29,7 @@ class NewSaneSnippetCommand(sublime_plugin.TextCommand):
         w = self.view.window()
         if snippet:
             self.new_sane_snippet(w, snippet=snippet)
-        
+
         elif self.has_selection():
             for region in self.view.sel():
                 if (len(region)):
